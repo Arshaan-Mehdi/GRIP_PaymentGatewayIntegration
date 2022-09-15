@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('https://education.nsw.gov.au/content/dam/main-education/parents-and-carers/media/images/maths/Charity_donations.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+div.scrollmenu {
+  background-color:black;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a  {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: powderblue;
+}
+.text-center {
+  text-align: center;
+}
+vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form span{
+  background-color: none;
+  text-align: left;
+  color: lighblack;
+  font-weight: normal;
+  padding: 4px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+   h2  span {
+        background-color: none;
+      }
+    h3 span{
+        background-color: none;
+
+    }
+    .container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+ input {
+        padding: 5px 10px;
+      }
+       div {
+        margin-bottom: 10px;
+      }
+</style>
+</head>
+<body>
+
+<div class="scrollmenu">
+  <a href="Home.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="contact.html">CONTACT US</a> 
+</div>
+ <h2  style="text-align:center; color: white; font-family:courier; font-size:300%;" ><span>THE EDUCATION TRUST </span></h2> 
+ <h3 style="text-align: center; color: white; font-family:courier; font-size:160%;"><span>Play your role in a constructive cause, donate for a cause.</span></h3>
+ <div align="center"> 
+  <div class="container">
+  <form method="post" action="backend.php"> 
+    <div class="form-group">
+<span>Name:</span>  <input type = "text" name = "name" required placeholder="Enter name">
+</div>
+ <div class="form-group">
+<span>Mobile Number:</span> <input type = "text" pattern="[789][0-9]{9}" name = "number" required placeholder="Enter phone number">
+</div>
+<div class="form-group">
+<span>Email Address:</span> <input type="email" pattern=".+@gmail\.com" name="email" required placeholder="Enter a valid email address">
+</div>
+<div class="form-group">
+<span>Amount:</span> <input type="number" name="am" required  oninvalid="this.setCustomValidity('Enter amount Name Here')" placeholder="Enter amount">
+</div>
+<div class="form-group">
+<button onclick="document.location='https://rzp.io/l/a11gJYyp'">DONATE</button>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
